@@ -16,7 +16,7 @@ function showCocktailData(data) {
   const cocktailInfo = `
   <h2>${data.strDrink}</h2>
   <img src="${data.strDrinkThumb}" alt="drink"/>
-  <ul>Ingredients
+  <ul>Ingredients:
   ${data.strMeasure1 ? `<li>${data.strMeasure1} ${data.strIngredient1 ?? ''}</li>` : `` }
   ${data.strMeasure2 ? `<li>${data.strMeasure2} ${data.strIngredient2 ?? ''}</li>` : `` }
   ${data.strMeasure3 ? `<li>${data.strMeasure3} ${data.strIngredient3 ?? ''}</li>` : `` }

@@ -1,6 +1,27 @@
-* {
-  text-align: center;
+#cocktail-data {
+  display: grid;
+  grid-template-areas: 
+  'name name'
+  'image ingredients'
+  'image instructions'
+  ;
+  height: 50%;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: flex-start;
 }
-li {
-  list-style-type: none;
+h2 {
+  grid-area: name;
+}
+img {
+  grid-area: image;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+ul {
+  grid-area: ingredients;
+}
+p {
+  grid-area: instructions;
 }
