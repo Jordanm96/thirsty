@@ -1,27 +1,47 @@
+body {
+  /* background-color: #7395ae; */
+  background-color: #557a95;
+}
 #cocktail-data {
   display: grid;
   grid-template-areas: 
   'name name'
   'image ingredients'
-  'image instructions'
+  'instructions instructions'
   ;
-  height: 50%;
-  width: 50%;
-  margin: 0 auto;
-  justify-content: flex-start;
+  grid-template-columns: 1fr 1fr;
+  height: 80%;
+  width: 80%;
+  justify-items: center;
+  /* border: 2px solid red; */
+  margin-top: 20px;
+  /* background-color: #557a95; */
+  background-color: #7395ae;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 h2 {
   grid-area: name;
 }
+
 img {
   grid-area: image;
   object-fit: contain;
   width: 100%;
   height: 100%;
+  padding-left: 10px;
+  align-self: start;
 }
+
 ul {
   grid-area: ingredients;
+  padding-right: 10px;
+  font-size: 12px;
+  align-self: start;
 }
+
 p {
   grid-area: instructions;
+  padding: 10px;
 }
